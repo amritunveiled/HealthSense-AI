@@ -1,0 +1,539 @@
+/* ===========================================
+   HealthSense AI Premium Theme
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"]{
+    font-family:'Poppins',sans-serif;
+    color:#1E293B;
+}
+
+/* ===========================================
+   Animated Background
+=========================================== */
+
+.stApp{
+    background:linear-gradient(
+        135deg,
+        #E0F7FA,
+        #F8FAFC,
+        #E8F5E9
+    );
+    background-size:300% 300%;
+    animation:gradientBG 18s ease infinite;
+}
+
+@keyframes gradientBG{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* ===========================================
+   Hide Streamlit Branding
+=========================================== */
+
+#MainMenu{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
+
+header{
+visibility:hidden;
+}
+
+/* ===========================================
+   Sidebar
+=========================================== */
+
+[data-testid="stSidebar"]{
+
+background:white;
+
+border-right:1px solid #E2E8F0;
+
+}
+
+[data-testid="stSidebar"] *{
+
+color:#1E293B !important;
+
+}
+
+/* ===========================================
+   Titles
+=========================================== */
+
+.main-title{
+
+font-size:54px;
+
+font-weight:800;
+
+color:#0F766E;
+
+text-align:center;
+
+margin-top:10px;
+
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+
+text-align:center;
+
+color:#475569;
+
+margin-bottom:40px;
+
+line-height:1.6;
+
+}
+
+/* ===========================================
+   Buttons
+=========================================== */
+
+.stButton>button{
+
+width:100%;
+
+background:#14B8A6;
+
+color:white;
+
+border:none;
+
+border-radius:14px;
+
+padding:14px;
+
+font-size:17px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.stButton>button:hover{
+
+background:#0F766E;
+
+transform:translateY(-2px);
+
+}
+
+
+/* ===========================================
+   Glass Cards
+=========================================== */
+
+.glass-card{
+
+background:rgba(255,255,255,0.75);
+
+backdrop-filter:blur(16px);
+
+-webkit-backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,0.45);
+
+border-radius:22px;
+
+padding:28px;
+
+margin-bottom:24px;
+
+box-shadow:0 10px 30px rgba(15,118,110,0.10);
+
+transition:all .35s ease;
+
+color:#1E293B;
+
+}
+
+.glass-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 18px 40px rgba(15,118,110,0.18);
+
+}
+
+.glass-card h1,
+.glass-card h2,
+.glass-card h3{
+
+color:#0F766E !important;
+
+font-weight:700;
+
+margin-bottom:12px;
+
+}
+
+.glass-card p{
+
+color:#475569 !important;
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+/* ===========================================
+   Metrics
+=========================================== */
+
+.metric-card{
+
+background:white;
+
+border-radius:18px;
+
+padding:22px;
+
+text-align:center;
+
+box-shadow:0 8px 24px rgba(0,0,0,0.08);
+
+transition:.3s;
+
+}
+
+.metric-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.metric-card h2{
+
+font-size:34px;
+
+margin-bottom:10px;
+
+}
+
+.metric-card h3{
+
+color:#0F766E;
+
+font-size:28px;
+
+font-weight:700;
+
+margin-bottom:8px;
+
+}
+
+.metric-card p{
+
+color:#64748B;
+
+font-size:15px;
+
+}
+
+/* ===========================================
+   Forms
+=========================================== */
+
+
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input,
+.stSelectbox div {
+    border-radius: 12px !important;
+    border: 1px solid #CBD5E1 !important;
+    background-color: #FFFFFF !important;
+    color: #111827 !important;
+}
+
+
+
+
+
+.stTextArea textarea{
+
+font-size:15px;
+
+}
+
+/* ===========================================
+   Progress Bar
+=========================================== */
+
+.stProgress > div > div{
+
+background:#14B8A6;
+
+}
+
+
+/* ===========================================
+   Tables
+=========================================== */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:12px;
+
+overflow:hidden;
+
+margin-top:15px;
+
+}
+
+th{
+
+background:#0F766E;
+
+color:white;
+
+padding:12px;
+
+text-align:left;
+
+}
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #E2E8F0;
+
+color:#334155;
+
+}
+
+/* ===========================================
+   Alerts
+=========================================== */
+
+[data-testid="stAlert"]{
+
+border-radius:14px;
+
+}
+
+/* ===========================================
+   Expanders
+=========================================== */
+
+.streamlit-expanderHeader{
+
+font-weight:600;
+
+color:#0F766E !important;
+
+}
+
+/* ===========================================
+   Floating Animation
+=========================================== */
+
+.float{
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* ===========================================
+   Section Divider
+=========================================== */
+
+hr{
+
+border:none;
+
+height:1px;
+
+background:#CBD5E1;
+
+margin:30px 0;
+
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media (max-width:768px){
+
+.main-title{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:17px;
+
+}
+
+.glass-card{
+
+padding:20px;
+
+}
+
+.metric-card{
+
+padding:16px;
+
+}
+
+}
+
+/* ===========================================
+   Force Text Visibility
+=========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+li,
+td,
+th,
+div{
+
+color:#1E293B;
+
+}
+
+.glass-card h2,
+.glass-card h3{
+
+color:#0F766E !important;
+
+}
+
+.glass-card p{
+
+color:#475569 !important;
+
+}
+
+.stMarkdown{
+
+color:#1E293B !important;
+
+}
+
+.stCaption{
+
+color:#64748B !important;
+
+}
+
+/* ===========================
+   Selectbox Dropdown Fix
+=========================== */
+
+div[data-baseweb="select"] * {
+    color: #1f2937 !important;
+}
+
+div[data-baseweb="popover"] {
+    background: white !important;
+}
+
+div[data-baseweb="popover"] * {
+    color: #1f2937 !important;
+}
+
+div[role="listbox"] {
+    background: white !important;
+}
+
+div[role="option"] {
+    color: #1f2937 !important;
+    background: white !important;
+}
+
+div[role="option"]:hover {
+    background: #e6f7f5 !important;
+    color: #000000 !important;
+}
+
+/* ---------- Fix Streamlit Selectbox Dropdown ---------- */
+
+div[data-baseweb="select"] * {
+    color: #1f2937 !important;
+}
+
+div[data-baseweb="popover"] {
+    background: white !important;
+}
+
+div[data-baseweb="popover"] * {
+    background: white !important;
+    color: #1f2937 !important;
+}
+
+div[role="listbox"] {
+    background: white !important;
+}
+
+div[role="option"] {
+    background: white !important;
+    color: #1f2937 !important;
+}
+
+div[role="option"]:hover {
+    background: #dff8f4 !important;
+    color: #111827 !important;
+}
