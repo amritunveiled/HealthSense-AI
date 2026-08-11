@@ -6,6 +6,9 @@ HealthSense AI is a polished Streamlit application that helps users explore heal
 
 It is designed for educational use only and does not replace professional medical advice, diagnosis, or treatment.
 
+<img width="1264" height="940" alt="Screenshot 2026-08-07 124531" src="https://github.com/user-attachments/assets/3992941a-4442-466f-92d9-9133170c3bb0" />
+
+
 ## What You Can Do
 
 - Ask health and wellness questions through an AI consultation flow
