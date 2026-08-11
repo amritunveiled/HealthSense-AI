@@ -1,4 +1,4 @@
-# HealthSense AI
+# HealthSense AI 
 
 ## Your AI-Powered Health & Wellness Companion
 
